@@ -1,4 +1,4 @@
-def numberToBase(n, 3):
+def numberToBase(n,3):
     if n == 0:
         return [0]
     digits = []
