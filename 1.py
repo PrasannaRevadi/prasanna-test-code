@@ -1,8 +1,13 @@
-def numberToBase(n,3):
-    if n == 0:
-        return [0]
-    digits = []
-    while n:
-        digits.append(int(n % 3))
-        n //= 3
-    return digits[::-1]
+ def solve(self, n):
+      sign = '-' if n<0 else ''
+      n = abs(n)
+      if n < 3:
+         return str(n)
+         s = ''
+      while n != 0:
+         s = str(n%3) + s
+         n = n//3
+      return sign+s
+ob = Solution()
+print(ob.solve(17))
+
